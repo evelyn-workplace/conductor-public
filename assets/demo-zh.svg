@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-label="Terminal demo: asking vv to ship something, and vv stopping to ask first because it would message real customers.">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Noto Sans TC", sans-serif; }
+    .chrome-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif; }
+    .cycle { animation: cyclefade 10.0s linear infinite; }
+    @keyframes cyclefade {
+      0% { opacity: 1; }
+      63.6% { opacity: 1; }
+      99.9% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .reveal { opacity: 0; animation: revealin 10.0s ease-out infinite; }
+    @keyframes revealin {
+      0% { opacity: 0; }
+      0.4% { opacity: 1; }
+      99.9% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .caret { animation: caretblink 1.05s steps(1) infinite; }
+    @keyframes caretblink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+    .styped{animation-delay:0.90s;}
+    .slab{animation-delay:1.90s;}
+    .sr0{animation-delay:1.90s;}
+    .sr1{animation-delay:2.32s;}
+    .sr2{animation-delay:2.74s;}
+  </style>
+  
+    <clipPath id="clip-s"><rect x="0" y="6" width="760" height="288" rx="14" ry="14"/></clipPath>
+    <g clip-path="url(#clip-s)">
+      <rect x="0" y="6" width="760" height="288" fill="#14171f"/>
+      <rect x="0" y="6" width="760" height="40" fill="#1c202b"/>
+      <line x1="0" y1="46" x2="760" y2="46" stroke="#333a4d" stroke-width="1"/>
+      <circle cx="22" cy="26" r="5.5" fill="#ff5f56"/>
+      <circle cx="40" cy="26" r="5.5" fill="#ffbd2e"/>
+      <circle cx="58" cy="26" r="5.5" fill="#27c93f"/>
+      <text class="chrome-title" x="380.0" y="31" text-anchor="middle" font-size="12.5" fill="#9aa1b2">vv — claude</text>
+    </g>
+  <g class="cycle">
+    <text x="30" y="80" font-size="16" fill="#6b7284">$ claude</text><text x="30" y="118" font-size="16" fill="#e8a33d">&gt;</text><text class="reveal styped" x="56" y="118" font-size="16" fill="#f4f1e8">vv 這個可以直接上線嗎？</text><text class="reveal slab" x="30" y="178" font-size="16" fill="#e8a33d" font-weight="700">vv</text><text class="reveal sr0" x="86" y="178" font-size="16" fill="#f4f1e8">這步是紅燈：會發訊息給真的客人。</text><text class="reveal sr1" x="86" y="205" font-size="16" fill="#f4f1e8">我先把名單和文案準備好給你看，</text><text class="reveal sr2" x="86" y="232" font-size="16" fill="#f4f1e8">你按過我才送出。</text>
+  </g>
+</svg>

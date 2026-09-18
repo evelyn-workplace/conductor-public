@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Co-Pilot Coach"
+  short_description: "Finish the first task safely, then connect memory, task dispatch, and verification."
+  default_prompt: "Use $vv-conductor as an AI co-pilot coach: first help me break down the requirement, name the risks, and shrink it to a safe first version, then decide whether to bring in memory and task dispatch."
